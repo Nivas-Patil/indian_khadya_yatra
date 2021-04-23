@@ -1,0 +1,73 @@
+
+.btn-group
+{
+    margin: 0px 5px 0px 0px;
+}
+.navbar-brand
+{
+    border: 1px solid;
+    border-radius: 14px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 2px 2px 8px whitesmoke;
+    background-image: linear-gradient(green, black);
+    color: black;
+}
+.showcontent
+{
+    
+    border-radius: 15px;
+    height: auto;
+}
+.card
+{
+    margin-top: 20px;
+    background-color: rgb(51, 48, 48);
+    height: 50px;
+}
+footer 
+{
+    padding: 10px 20px;
+    background: rgb(54, 53, 53);
+    color: white;
+    margin-top: 20px;
+}
+#demo
+{
+    text-align: center;
+}
+.iaminredform
+{
+    color: red;
+    text-align: justify;
+    font-size: 18px;
+}
+.iamingreenform
+{
+    color: green;
+    text-align: justify;
+    font-size: 18px;
+}
+.contact
+{
+    
+    padding: 10px 6px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px gray;
+}
+.contact p
+{
+    font-size: 14px;
+}
+
+
+@media only screen and (min-device-width:320px) and (max-device-width:812px)
+{
+   #collapsibleNavbar ul li
+   {
+      margin-top: 12px;
+   } 
+   .btntop , .inputtop
+   {
+       margin-top: 15px;
+   }
+}

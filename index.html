@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>खाद्य यात्रा</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="currentTime()">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">खाद्य यात्रा</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="input-group">
+                <input type="text" class="form-control inputtop" placeholder="खाद्य पदार्थ येथे शोधा ..."
+                    id="search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success btntop" type="button">शोधा</button>
+                </div>
+            </div>
+            <ul class="navbar-nav pl-2">
+                <li class="nav-item">
+                    <!-- Example single danger button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            शाकाहारी
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" onclick="vegbiryani()">शाकाहारी बिर्याणी </a>
+                            <a class="dropdown-item" href="#" onclick="masalebhat()">मसाला राईस </a>
+                            <a class="dropdown-item" href="#" id="paneer" onclick="paneer()"> पनीर भाजी </a>
+                            <a class="dropdown-item" href="#"> सलाद</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">लवकरच येत आहे</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            मांसाहारी
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" id="chickenbiryani" onclick="chickenbiryaniracipe()">चिकन
+                                बिर्याणी</a>
+                            <a class="dropdown-item" href="#" onclick="matanbiryani()"> मटण बिर्याणी</a>
+                            <!--<a class="dropdown-item" href="#"> मटण रस्सा </a>
+                            <a class="dropdown-item" href="#"> चिकन रस्सा </a>-->
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">लवकरच येत आहे</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <button class="btn btn-success" type="submit" id="contact" onclick="contact()">संपर्क</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container showcontent">
+        <p id="demo"></p>
+        
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                   <ol class="iamingreenform list-group" >
+                       <li class="list-group-item active" aria-current="true">तंदुरुस्त रहा निरोगी रहा</li>
+                       <li class="list-group-item">
+                        
+                       </li>
+                       <li class="list-group-item">
+                        जवळ करा लिंबू संत्री, दूर होईल पोटाची वाजंत्री.
+                       </li>
+                       <li class="list-group-item">
+                        रोज एक फळ खावू या; आरोगयाचे संवर्धन करु या.
+                       </li>
+                       <li class="list-group-item">
+                        पालेभाज्या घ्या मुखी; आरोग्य ठेवा सुखी.
+                       </li>
+                       <li class="list-group-item">
+                        भोजनोत्तर फळांचा ग्रास; थांबवेल आरोग्याचा ह्रास.
+                       </li>
+                       <li class="list-group-item">
+                        पपई, गाजर खाऊ स्वस्त, डोळ्यांचे आरोग्य ठेवू मस्त.
+                       </li>
+                       <li class="list-group-item">
+                        जेवणा नंतर केळी खा; पाचनशक्तीला वाव द्या.
+                       </li>
+                       <li class="list-group-item">
+                        सकाळी नाश्ता करावा मस्त,
+                        मोड आलेले धान्य करावे फस्त.
+                       </li>
+                       <li class="list-group-item">
+                        खाल गाजर, मुळे तर होतील सुंदर डोळे.
+                       </li>
+                       <li class="list-group-item">
+                        गालावर खेळते सदा हास्य, फळे व भाज्यांचे आहे ते रहस्य.
+                       </li>
+                   </ol>
+                   <ol class="iaminredform list-group mt-4 mb-4">
+                       <li class="list-group-item active" aria-current="true">हे टाळण्याचा प्रयत्न करा</li>
+                      
+                    <li class="list-group-item">
+                        भेसळयुक्त अन्न खाऊ नका; आरोग्य धोक्यात आणू नका.
+                    </li>
+                    <li class="list-group-item">
+                        साखर व तूप यांचे अति सेवन करु नका
+                        मधुमेह व लठ्ठपणाला आमंत्रण देऊ नका.
+                       </li>
+                       <li class="list-group-item">
+                        भाज्या जास्त वेळ शिजवू नका, जीवनसत्वांचा नाश करु नका.
+                       </li>
+                   </ol>
+                </div>
+            </div>
+            <div class="contact">
+                <form>
+                    <a href="#contact" hidden>abc</a>
+                    <h4>संपर्क  करा</h4>
+                    <p>आपण नाव आणि ईमेल रिक्त करू शकता</p>
+                    <label for='name' style='float:left;'>नाव </label>
+                    <input type='text' id='name' class='form-control'>
+                    <label for='email' style='float:left;'>ईमेल </label>
+                    <input type='text' id='email' class='form-control'>
+                    <label for='message' style='float:left;'>संदेश किंवा समस्या टाइप करा</label>
+                    <input type='text' id='message' class='form-control'><br>
+                    <button class='btn  btn-success btn-block'>संदेश पाठवा</button>
+                </form>
+            </div>
+    </div>
+
+    <footer>
+        <p>खाद्य यात्रा © कॉपीराइट सर्व हक्क राखीव आहेत. कॉपी करण्याचा प्रयत्न करू नका&nbsp; &nbsp; &nbsp;<span  id="time"></span></p>
+    </footer>
+
+</body>
+
+</html>
