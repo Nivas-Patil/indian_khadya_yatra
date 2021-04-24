@@ -51,6 +51,8 @@ function chickenbiryaniracipe()
     त्यात भिजवलेले तांदूळ टाकून भात अर्धा कच्चा शिजवून घ्यावा. भात चाळणीत गाळून घ्यावा.<br><br>
     <b>3)</b>
     एका भांड्यात शिजवलेलं चिकन आणि भाताचे थर लावून त्याला कमी आचेवर 20 मिनिट शिजायला ठेवावे. आपली बिर्याणी तयार.
+    <br><br>
+    <button type='submit' onclick='print()' class='btn btn-success'>कृती डाउनलोड करा</button>
     <hr>
     `
     document.getElementById("demo").innerHTML = heading + "" + txt + "" + things;
@@ -84,6 +86,9 @@ function paneer()
     1/2 टेबल स्पून मीठ<br>
     4 टेबलस्पून तेल<br>
     1/2 टेबलस्पून बटर
+    <br><br>
+    <button type='submit' onclick='print()' class='btn btn-success'>कृती डाउनलोड करा</button>
+    <hr>
     `
     document.getElementById("demo").innerHTML = heading + "" + txt + "" + things;
 }
@@ -149,6 +154,8 @@ function vegbiryani()
     भाजी व भात अशा २ ते ३ लेअर एकमेकांवर घाला. तयार झाली आहे आपली रुचकर व्हेजिटेबल बिर्याणी!
     गार्निशिंगसाठी बिर्याणीवर तळलेला कांदा, पुदीना व 
     कोथिंबीरीची पाने घालून गरमा गरम बिर्याणी सर्व्ह करा. या बिर्याणीचा आस्वाद तुम्ही थंडगार कोशिंबीरीसोबतही घेऊ शकता.
+    <br><br>
+    <button type='submit' onclick='print()' class='btn btn-success'>कृती डाउनलोड करा</button>
     <hr>
     `
     document.getElementById("demo").innerHTML = heading + "" + txt + "" + things;
@@ -200,6 +207,7 @@ function masalebhat()
     <b>5)</b>
     टेस्टी मसाला भात तयार झाला आहे.
     <br><br>
+    <button type='submit' onclick='print()' class='btn btn-success'>कृती डाउनलोड करा</button>
     <hr>
     `
     document.getElementById("demo").innerHTML = heading + "" + txt + "" + things;
@@ -272,9 +280,30 @@ function matanbiryani()
     कांदा घाला आणि एक कप दूध घाला....
     आणि वाफ बाहेर जाऊ नये असे झाकण लावून ठेवा...कमीत कमी १/२ तास....झाली आपली मस्त बिर्याणी तयार...
     <br><br>
+    <button type='submit' onclick='print()' class='btn btn-success'>कृती डाउनलोड करा</button>
     <hr>
     `
     document.getElementById("demo").innerHTML = heading + "" + txt + "" + things;
 }
-
+function contact()
+{
+    var heading = `
+    <h3 style='padding-top:10px;'>संपर्क  तयार करा व पाठवा</h3>
+    <p>आपण नाव आणि ईमेल रिक्त करू शकता</p>
+    `
+    var things = `
+    <form>
+        <label for='name' style='float:left;'>नाव </label>
+        <input type='text' id='name' class='form-control'>
+        <label for='email' style='float:left;'>ईमेल </label>
+        <input type='text' id='email' class='form-control'>
+        <label for='message' style='float:left;'>संदेश </label>
+        <input type='text' id='message' class='form-control'><br>
+        <button class='btn btn-primary  btn-success'>पाठवा</button>
+        <hr>
+    </form>
+   
+    `
+    document.getElementById("demo").innerHTML = heading + " " + things;
+}
 
